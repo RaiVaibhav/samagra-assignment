@@ -19,30 +19,36 @@ export async function saveDataInIndexDB(data, key) {
   }
 }
 
+export const LOADINGKEY = 'isLoading';
+
 export const initialState = {
   'comments': {
     startTime: '',
     endTime: '',
     startSaveTime: '',
-    startEndTime: ''
+    startEndTime: '',
+    [LOADINGKEY]: false,
   },
   'photos': {
     startTime: '',
     endTime: '',
     startSaveTime: '',
-    startEndTime: ''
+    startEndTime: '',
+    [LOADINGKEY]: false,
   },
   'todos': {
     startTime: '',
     endTime: '',
     startSaveTime: '',
-    startEndTime: ''
+    startEndTime: '',
+    [LOADINGKEY]: false,
   },
   'posts': {
     startTime: '',
     endTime: '',
     startSaveTime: '',
-    startEndTime: ''
+    startEndTime: '',
+    [LOADINGKEY]: false,
   }
 }
 
